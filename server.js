@@ -48,6 +48,12 @@ app.get('/about', function(req, res) {
   });
 });
 
+app.get('/projects', function(req, res) {
+  res.render('projects', {
+    pageTitle: 'Projects'
+  });
+});
+
 app.listen(port, function() {
   console.log(`Server is up on port ${port}`);
 });
